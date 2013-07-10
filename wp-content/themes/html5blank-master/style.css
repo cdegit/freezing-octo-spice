@@ -79,10 +79,10 @@ body, html {
 }
 
 body {
-	background-image:url("../../uploads/2013/07/dichotomy.png") no-repeat; /* For browsers that don't support multiple bgs */
+	background-image:url("img/dichotomy.png") no-repeat; /* For browsers that don't support multiple bgs */
 	background:
-		url("../../uploads/2013/07/dichotomy.png") no-repeat,
-		url("../../uploads/2013/07/bright_squares.png");
+		url("img/dichotomy.png") no-repeat,
+		url("img/bright_squares.png");
 	background-position:5% 80%;
 	background-attachment:fixed;
 }
