@@ -47,31 +47,31 @@ function wg_display_works_meta_box( $work ) {
     ?>
     <table>
         <tr>
-            <td style="width: 100%">Year</td>
-            <td><input type="text" size="80" name="year" value="<?php echo $year; ?>" /></td>
+            <td style="width: 100%"><label for="wg-year">Year</label></td>
+            <td><input type="text" size="80" name="wg-year" id="wg-year" value="<?php echo $year; ?>" /></td>
         </tr>
         <tr>
-            <td style="width: 150px">Client</td>
+            <td style="width: 150px"><label for="wg-client">Client</label></td>
             <td>
-                <input type="text" size="80" name="client" value="<?php echo $client; ?>" />
+                <input type="text" size="80" name="wg-client" id="wg-client" value="<?php echo $client; ?>" />
             </td>
         </tr>
 		<tr>
-            <td style="width: 150px">Role</td>
+            <td style="width: 150px"><label for="wg-role">Role</label></td>
             <td>
-                <input type="text" size="80" name="role" value="<?php echo $role; ?>" />
+                <input type="text" size="80" name="wg-role" id="wg-role" value="<?php echo $role; ?>" />
             </td>
         </tr>
-		        <tr>
-            <td style="width: 150px">Tools</td>
+		<tr>
+            <td style="width: 150px"><label for="wg-tools">Tools</label></td>
             <td>
-                <input type="text" size="80" name="tools" value="<?php echo $tools; ?>" />
+                <input type="text" size="80" name="wg-tools" id="wg-tools" value="<?php echo $tools; ?>" />
             </td>
         </tr>
-		        <tr>
-            <td style="width: 150px">Link</td>
+		<tr>
+            <td style="width: 150px"><label for="wg-link">Link</label></td>
             <td>
-                <input type="text" size="80" name="link" value="<?php echo $link; ?>" />
+                <input type="text" size="80" name="wg-link" id="wg-link" value="<?php echo $link; ?>" />
             </td>
         </tr>
     </table>
