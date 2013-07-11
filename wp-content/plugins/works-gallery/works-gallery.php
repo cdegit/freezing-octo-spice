@@ -10,6 +10,7 @@ License: GPL3
 */
 
 include 'wg_widget.php';
+include 'wg_options.php';
 
 add_action( 'init', 'wg_create_post_type' );
 add_action( 'add_meta_boxes', 'wg_add_post_meta_boxes' );
@@ -115,4 +116,10 @@ function wg_template_check( $template_path ) {
   
     return $template_path;  
 }  
+
+function register_wg_options_page() {
+	add_menu_page( "wg-options", "Works Gallery Options", "manage_options", "Works Gallery", "create_wg_options");
+}
+
+add_action( 'admin_menu', 'register_wg_options_page' );
 ?>
