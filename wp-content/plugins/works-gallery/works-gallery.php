@@ -119,6 +119,17 @@ function wg_template_check( $template_path ) {
 
 function register_wg_options_page() {
 	add_menu_page( "wg-options", "Works Gallery Options", "manage_options", "Works Gallery", "create_wg_options");
+	
+	//call register settings function
+	add_action( 'admin_init', 'register_wg_settings' );
+}
+
+
+function register_wg_settings() {
+	//register our settings
+	register_setting( 'wg-settings-group', 'new_option_name' );
+	register_setting( 'wg-settings-group', 'some_other_option' );
+	register_setting( 'wg-settings-group', 'option_etc' );
 }
 
 add_action( 'admin_menu', 'register_wg_options_page' );
